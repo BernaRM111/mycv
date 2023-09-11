@@ -14,6 +14,10 @@ export class HeaderComponent implements OnInit{
  titulos : string = "??";
  mision : string = "??";
  fotos : string = "";
+ email : string = "";
+ celular : string = "";
+ ubicacion : string = "";
+ redsocial : string = "";
  
  ngOnInit(): void {
    this.headerService.getHeader()
@@ -24,6 +28,10 @@ export class HeaderComponent implements OnInit{
 	   this.titulos = data.titulos;
 	   this.mision = data.mision;
 	   this.fotos = data.fotos;
+	   this.email = data.email;
+	   this.celular = data.celular;
+	   this.ubicacion = data.ubicacion;
+	   this.redsocial = data.redsocial;
 
    });
  }

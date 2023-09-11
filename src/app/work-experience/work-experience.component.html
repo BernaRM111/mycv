@@ -1,1 +1,27 @@
+<!-- work-experience.component.html -->
+
+<div *ngIf="workExperience.length > 0">
+  <h2>Work Experience</h2>
+  <ul>
+    <li *ngFor="let experiencia of workExperience">
+      <h3>{{ experiencia.puesto }} en {{ experiencia.empresa }}</h3>
+      <p>Fecha de inicio: {{ experiencia.fecha_ini }}</p>
+      <p>Fecha de finalización: {{ experiencia.fecha_fin }}</p>
+      <p>Ciudad: {{ experiencia.ciudad }}</p>
+      <p>País: {{ experiencia.pais }}</p>
+
+      <h4>Logros:</h4>
+      <ul>
+        <li *ngFor="let logro of experiencia.logros">
+          {{ logro.descripcion }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="workExperience.length === 0">
+  <p>No hay experiencia laboral para mostrar.</p>
+</div>
+
 
