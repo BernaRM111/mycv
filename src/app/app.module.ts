@@ -7,14 +7,16 @@ import { HeaderComponent } from './header/header.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
 import { HttpClientModule} from '@angular/common/http';
-import { SkillsComponent } from './skills/skills.component'
+import { SkillsComponent } from './skills/skills.component';
+import { CertificatesComponent } from './certificates/certificates.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WorkExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,
