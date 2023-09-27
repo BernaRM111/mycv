@@ -11,7 +11,7 @@ export class SkillsService {
 
   constructor(private http: HttpClient) { }
 
-  apiURL = 'http://localhost:8080/skills';
+  apiURL = 'https://ber-api-service-bernarm111.cloud.okteto.net/skills';
 
   //Http Options
   httpOptions = {

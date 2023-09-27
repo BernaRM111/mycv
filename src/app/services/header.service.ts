@@ -10,7 +10,7 @@ import { BehaviorSubject } from 'rxjs';
 export class HeaderService {
 
   constructor(private http: HttpClient) { }
-  apiURL = 'http://localhost:8080/header';
+  apiURL = 'https://ber-api-service-bernarm111.cloud.okteto.net/header';
 
   //Http Options
   httpOptions = {

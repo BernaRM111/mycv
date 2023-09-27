@@ -11,7 +11,7 @@ export class WorkExperienceService {
 
   constructor(private http: HttpClient) { }
 
-  apiURL = 'http://localhost:8080/work-experience';
+  apiURL = 'https://ber-api-service-bernarm111.cloud.okteto.net/work-experience';
 
   //Http Options
   httpOptions = {

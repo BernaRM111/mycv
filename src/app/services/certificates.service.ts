@@ -11,7 +11,7 @@ export class CertificatesService {
 
   constructor(private http: HttpClient) { }
 
-  apiURL = 'http://localhost:8080/certificates';
+  apiURL = 'https://ber-api-service-bernarm111.cloud.okteto.net/certificates';
 
   //Http Options
   httpOptions = {

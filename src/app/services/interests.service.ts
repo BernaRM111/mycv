@@ -11,7 +11,7 @@ export class InterestsService {
 
   constructor(private http: HttpClient) { }
 
-  apiURL = 'http://localhost:8080/interests';
+  apiURL = 'https://ber-api-service-bernarm111.cloud.okteto.net/interests';
 
   //Http Options
   httpOptions = {
